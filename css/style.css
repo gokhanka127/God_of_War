@@ -1,0 +1,884 @@
+body {
+    font-family: 'Helvetica', 'sans-serif';
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+label,
+strong {
+    line-height: 2;
+    font-size: 0.85em;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.badge {
+    padding: 9px 20px;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.badge.new {
+    background-color: #FF205F;
+}
+
+.badge.strategy {
+    background-color: #4EAE60;
+}
+
+.badge.racing {
+    background-color: #694EAE;
+}
+
+.badge.rpg {
+    background-color: #40ABF5;
+}
+
+.badge.tournaments {
+    background-color: #FB6E10;
+}
+
+.badge.premium-tournament {
+    background-color: #FFB320;
+    color: #252525;
+}
+
+.shade {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* HEADER */
+
+.container {
+    max-width: 1224px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.navbar {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+header {
+    background-color: #131313;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #e13333;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: 1px solid #e13333;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    height: 1px;
+    background-color: #e13333;
+    margin: 4px 0;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #e13333;
+    cursor: pointer;
+}
+
+#login-register-button {
+    background-color: #e13333;
+    color: #131313;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+/* GoW Section */
+#GoW-image {
+    background: url(/images/GoW-image.jpg) top center no-repeat;
+    height: 820px;
+}
+
+.marketing-text {
+    max-width: 1200px;
+    margin: -30px auto 0;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+
+.marketing-text h1 {
+    color: #eee;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+.marketing-text span {
+    color: #e13333;
+}
+
+.marketing-text h5 {
+    color: #eee;
+    font-size: 1em;
+    font-weight: 400;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 2.5em;
+}
+
+.marketing-text button {
+    background-color: #e13333;
+    color: #131313;
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 0.85em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+/* LATEST NEWS Section */
+
+#latest-news {
+    margin-bottom: 75px;
+}
+
+#latest-news .flex {
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 0;
+}
+
+#latest-news .flex h5 {
+    flex-basis: 25%;
+    background-color: #FFB320;
+    padding: 25px;
+    margin: 0;
+    text-align: right;
+    color: #eee;
+    font-size: 1.2em;
+}
+
+#latest-news-container {
+    background-color: #131313;
+    position: relative;
+    flex-basis: 75%;
+    padding: 25px;
+}
+
+#latest-news-container .badge {
+    margin-right: 20px;
+}
+
+#latest-news-container .latest-news-text {
+    color: #eee;
+}
+
+/* MAIN CHARACTERS Section */
+
+#main-characters {
+    margin-bottom: 75px;
+}
+
+#main-characters h1{
+    text-align: center;
+    color: #e13333;
+    font-weight: bolder;
+}
+
+#main-characters .box {
+    flex-basis: 25%;
+    position: relative;
+    height: 380px;
+}
+
+#main-characters .box.Kratos {
+    background: url(/images/god-of-war-ragnarok-kratos.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+#main-characters .box.Atreus {
+    background: url(/images/Atreus-GOWR.webp) top center no-repeat;
+    background-size: cover;
+}
+
+#main-characters .box.Thor {
+    background: url(/images/GoW\ Thor.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+#main-characters .box.Laufey {
+    background: url(/images/Laufeyposter.webp) top center no-repeat;
+    background-size: cover;
+}
+
+#main-characters .box .badge {
+    position: relative;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+}
+
+#main-characters .box .contents {
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    color: #eee;
+    padding: 0 35px 0 25px;
+}
+
+#main-characters .box .contents a {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #999;
+}
+
+/* GoW MONSTERS Section */
+
+#GoW-monsters {
+    background: url(/images/monster.png) 0 0 repeat;
+    background-color: #eef2f6;
+    border-top: 1px solid #d6dee7;
+    border-bottom: 1px solid #d6dee7;
+    padding: 70px 0 120px;
+}
+
+#GoW-monsters h1 {
+    text-align: center;
+}
+
+#GoW-monsters .box {
+    position: relative;
+    flex-basis: 30%;
+    background-color: #fff;
+}
+
+#GoW-monsters .box .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+#GoW-monsters .box img {
+    width: 100%;
+}
+
+#GoW-monsters .box .box-lower {
+    padding: 20px;
+}
+
+#GoW-monsters .box .box-lower p {
+    color: #999;
+}
+
+#GoW-monsters .box .box-lower a {
+    font-size: 0.8em;
+}
+
+
+/* Tournaments Section */
+
+#tournaments {
+    background: url(/images/footer_bg_pattern.png) 0 0 repeat;
+    padding: 125px 0 105px;
+}
+
+#tournaments .flex {
+    position: relative;
+}
+
+#tournaments .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#tournaments .badge.tournaments {
+    top: -32px;
+    left: 15px;
+}
+
+#tournaments .box {
+    background-color: #252525;
+    padding: 70px 20px 40px;
+    flex-basis: 45%;
+    position: relative;
+
+}
+
+#tournaments .box .tournaments-image {
+    float: left;
+    width: 30%;
+}
+
+#tournaments .box .tournaments-image img {
+    width: 100%;
+}
+
+#tournaments .box .tournaments-content {
+    float: left;
+    margin-left: 25px;
+    width: 60%;
+}
+
+#tournaments .box .tournaments-content h3 {
+    color: #FFB320;
+    margin-top: 0;
+}
+
+#tournaments .box .tournaments-content label {
+    color: #999;
+    font-size: 0.75em;
+}
+
+#tournaments .box .tournaments-content label.properties {
+    color: #FFB320;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+#tournaments .box .tournaments-content strong {
+    color: #eee;
+    font-size: 0.75em;
+}
+
+/* RECENT REVIEWS Section */
+
+#recent-reviews {
+    background: url(/images/recent_reviews_bg.png) top right no-repeat;
+    background-size: cover;
+    padding: 75px 0 50px;
+}
+
+#recent-reviews h1 {
+    text-align: center;
+    margin-bottom: 1.65em;
+    /* background-color: #999;
+    width: 500px; */
+}
+
+#recent-reviews .box {
+    flex-basis: 23%;
+    position: relative;
+    text-align: center;
+}
+
+#recent-reviews .box .rating-badge {
+    border-radius: 28px;
+    padding: 12px;
+    font-size: 1.1em;
+    color: #eee;
+    background-color: #FFB320;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+
+#recent-reviews .box .rating-badge.purple {
+    background-color: #694EAE;
+}
+
+#recent-reviews .box .rating-badge.green {
+    background-color: #4EAE60;
+}
+
+#recent-reviews .box .rating-badge.violet {
+    background-color: #FF20AE;
+}
+
+#recent-reviews .box .recent-review-image {
+    margin-bottom: 0.75em;
+    overflow: hidden;
+}
+
+#recent-reviews .box .recent-review-image img {
+    width: 100%;
+}
+
+#recent-reviews .box p {
+    color: #999;
+}
+
+
+
+/* Posts & Comments Section */
+
+#posts-comments {
+    background: url(/images/footer_bg_pattern.png) 0 0 repeat;
+    padding: 75px 0;
+
+}
+
+#posts-comments .god-of-war {
+    flex-basis: 32%;
+    position: relative;
+}
+
+#posts-comments .god-of-war p {
+    color: #eee;
+    font-weight: 600;
+}
+
+#posts-comments .god-of-war img {
+    margin-bottom: 0.5em;
+}
+
+#posts-comments .god-of-war img.footer-graphic {
+    position: absolute;
+    margin-bottom: 0;
+    width: 55%;
+}
+
+#posts-comments .posts-comments-box {
+    flex-basis: 28%;
+    background-color: #252525;
+    padding: 20px 20px 25px;
+    border: 1px solid #4a4a4a;
+
+}
+
+#posts-comments .posts-comments-box h3 {
+    color: #eee;
+}
+
+.post-item {
+    margin-top: 25px;
+}
+
+.post-item:first-child {
+    margin-top: 0;
+}
+
+.post-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.post-item img {
+    float: left;
+    width: 30%;
+}
+
+.post-item>div {
+    float: left;
+    margin-left: 5%;
+    width: 65%;
+}
+
+.post-item>div h5 {
+    color: #FFB320;
+    font-size: 0.75em;
+    margin-top: 0;
+}
+
+.post-item>div p {
+    color: #eee;
+    margin: 5px 0;
+    font-size: 0.75em;
+}
+
+.post-item>div small {
+    color: #999;
+    font-size: 0.70em;
+}
+
+.comments-item {
+    margin-top: 1em;
+}
+
+.comments-item:first-child {
+    margin-top: 0;
+}
+
+.comments-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.comments-item img {
+    width: 23%;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+}
+
+.comments-item>div {
+    float: left;
+    margin-left: 7%;
+    width: 70%;
+}
+
+.comments-item>div p {
+    color: #eee;
+    font-size: 0.75em;
+    margin: 0 0 5px;
+}
+
+.comments-item>div span {
+    color: #999;
+}
+
+.comments-item>div p span.author {
+    color: #e13333;
+}
+
+.comments-item>div h5 {
+    color: #FFB320;
+    font-size: 0.75em;
+    margin-top: 0;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #252525;
+    padding: 25px 0 20px;
+}
+
+footer small {
+    color: #ddd;
+    font-size: 1em;
+}
+
+footer small a {
+    color: #e13333;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer ul li a {
+    color: #ddd;
+    font-size: 1em;
+}
+
+footer ul li a:hover {
+    color: #e13333;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .flex {
+        max-width: 1000px;
+    }
+
+    .latest-news-item {
+        font-size: 0.8em;
+    }
+
+    #tournaments .box .tournaments-content {
+        margin-left: 15px;
+    }
+
+    #tournaments .box .tournaments-content h3 {
+        font-size: 1.4em;
+        margin-bottom: 0.2em;
+    }
+}
+
+@media (max-width: 991px) {
+    .flex {
+        max-width: 720px;
+    }
+
+    #latest-news .flex h5 {
+        width: 15%;
+    }
+
+    #main-characters .flex {
+        flex-wrap: wrap;
+    }
+
+    #main-characters .box {
+        flex-basis: 50%;
+    }
+
+    #tournaments .box {
+        flex-basis: 42%;
+    }
+
+    #tournaments .box .tournaments-image {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    #tournaments .box .tournaments-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #recent-reviews {
+        background: none;
+    }
+
+    #recent-reviews .flex {
+        flex-wrap: wrap;
+    }
+
+    #recent-reviews .box {
+        flex-basis: 48%;
+        margin-bottom: 45px;
+    }
+
+    #posts-comments .flex {
+        flex-wrap: wrap;
+    }
+
+    #posts-comments .god-of-war {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+    #posts-comments .posts-comments-box {
+        flex-basis: 43%;
+    }
+
+    #posts-comments .god-of-war img.footer-graphic {
+        display: none;
+    }
+
+    footer .flex {
+        flex-wrap: wrap-reverse;
+    }
+
+    footer small {
+        flex-basis: 100%;
+        font-size: 0.75em;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+
+    footer ul {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .flex {
+        max-width: 540px;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-top: 2px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        margin-left: 0;
+        margin-top: 21px;
+        z-index: 2;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    #GoW-image {
+        height: 650px;
+        background-size: cover;
+    }
+
+    .marketing-text {
+        margin-top: -85px;
+    }
+
+    .marketing-text h1 {
+        font-size: 2.5em;
+    }
+
+    #latest-news .flex h5 {
+        display: none;
+    }
+
+    #latest-news-container {
+        flex-basis: 100%;
+    }
+
+    #main-characters {
+        padding: 60px 0;
+    }
+
+    #main-characters .box,
+    #GoW-monsters .box {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    #GoW-monsters .flex,
+    #tournaments .flex {
+        flex-wrap: wrap;
+    }
+
+    #tournaments .box {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    #tournaments .box .tournaments-image {
+        height: 400px;
+    }
+
+    #recent-reviews .box {
+        flex-basis: 100%;
+    }
+
+    #recent-reviews .box .recent-reviews-image {
+        height: 400px;
+    }
+
+    #posts-comments .posts-comments-box {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+    footer ul li {
+        margin: 0 10px;
+    }
+
+    footer ul li a {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo img {
+        width: 150px;
+        margin-top: 2px;
+    }
+
+    #login-register-button {
+        padding: 10px;
+        font-size: 0.65em;
+    }
+
+    #tournaments .box .tournaments-image {
+        height: 220px;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .logo img {
+        width: 150px;
+        margin-top: 2px;
+    }
+
+    #login-register-button {
+        padding: 10px;
+        font-size: 0.65em;
+    }
+
+    #tournaments .box .tournaments-image {
+        height: 220px;
+    }
+}
